@@ -1,9 +1,9 @@
-var curentDate = new Date ();
+var currentDate = new Date ();
 
-var open = document.getElementById("table").rows[curentDate.getDay()+1].cells[2].innerHTML;
-var close = document.getElementById("table").rows[curentDate.getDay()+1].cells[4].innerHTML;
+var open = document.getElementById("table").rows[currentDate.getDay()+1].cells[2].innerHTML;
+var close = document.getElementById("table").rows[currentDate.getDay()+1].cells[4].innerHTML;
 
-var timeNow = curentDate.getHours() + ":" + curentDate.getMinutes();
+var timeNow = currentDate.getHours() + ":" + currentDate.getMinutes();
 
 
 if(open<=timeNow && timeNow<close){
