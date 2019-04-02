@@ -36,7 +36,7 @@ So basically:
 
 First I get the current date. Depending on what day is today, I toggle through the html table and compare the current hours and minutes with the opening and closing hours. If the current time is betwen opening and closing hours, then the status is change to "Open", in any other situation, the status is "Close".
 
-You can see the resoults [here](https://alexandramadalina.github.io/serious-business/.)
+You can see the results [here](https://alexandramadalina.github.io/serious-business/.)
 
 ## Things I learned
 
