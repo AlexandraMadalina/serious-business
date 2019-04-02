@@ -1,0 +1,12 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(img/restaurant.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.main{
+    background: rgba(230, 230, 230, 0.8);
+    margin: 10% auto;
+}
