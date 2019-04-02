@@ -44,6 +44,9 @@ You can create a Date object using `new Date() ` constructor witch returns curre
 
 DOM table element has the rows and cells properties which is the array. Rows property has the collections of the all row of the table. Cells has the collections of the all cells of the specific row. For example, if you want to access the value of the first table cell, you can write `document.getElementById("myTable").rows[0].cells[0].innerHTML`.
 
+## Special thanks
+[Supriya K R](https://github.com/supriyakushavar)
+
 
 
 ## Documentation
