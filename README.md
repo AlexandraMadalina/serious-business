@@ -42,3 +42,15 @@ You can see the resoults [here](https://alexandramadalina.github.io/serious-busi
 
 You can create a Date object using `new Date() ` constructor witch returns current date and time. You can access a specific property of that object with [Date Object methods](https://javascript.info/date).
 
+DOM table element has the rows and cells properties which is the array. Rows property has the collections of the all row of the table. Cells has the collections of the all cells of the specific row. For example, if you want to access the value of the first table cell, you can write `document.getElementById("myTable").rows[0].cells[0].innerHTML`.
+
+
+
+## Documentation
+
+[w3schools](https://www.w3schools.com/jsref/coll_table_rows.asp)
+
+[stackoverflow](https://stackoverflow.com/questions/26675107/javascript-dates-how-do-i-compare-the-current-date-time-against-a-recurring-eve)
+
+[How to Compare Two Dates In JavaScript](https://www.c-sharpcorner.com/UploadFile/8911c4/how-to-compare-two-dates-using-javascript/)
+
