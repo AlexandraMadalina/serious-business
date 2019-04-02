@@ -31,3 +31,7 @@ So basically:
 - Add a button "Close early"
 - When you click this button, the current day's business hours end at the current time in the table
 (So on thursday if I click this button at 14:45, the table's business hours for thursday will change to end at 14:45)
+
+## My approach
+
+First I get the current date. Depending on what day is today, I toggle through the html table and compare the current hours and minutes with the opening and closing hours. If the current time is betwen opening and closing hours, then the status is change to "Open", in any other situation, the status is "Close".
