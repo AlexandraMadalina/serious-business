@@ -49,7 +49,7 @@ DOM table element has the rows and cells properties which is the array. Rows pro
 
 
 
-## Documentation
+### Documentation
 
 [w3schools](https://www.w3schools.com/jsref/coll_table_rows.asp)
 
