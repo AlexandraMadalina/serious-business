@@ -1,4 +1,4 @@
-body{
+body {
     width: 100vw;
     height: 100vh;
     background-image: url(img/restaurant.jpeg);
@@ -6,19 +6,52 @@ body{
     background-size: contain;
     background-position: center center;
 }
-.main{
+
+.main {
     background: rgba(230, 230, 230, 0.8);
     margin: 10% auto;
     width: 70vw;
-  
-}
 
-.status{
+}
+.right{
+    align-content: space-between;
+    text-align: center;
+}
+.right * {
+width: 30%;
+margin:  auto;
+}
+.status {
     margin: 20% auto;
     width: 50%;
 }
 
-.curent-status{
+.curent-status {
     width: 100%;
-    margin-block-start:0em;
+    margin-block-start: 0em;
 }
+
+button {
+    display: inline-block;
+    background:rgba(230, 230, 230, 0.2);
+    border: none;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #343a40;
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    text-decoration: none;
+}
+button:active {
+   
+    box-shadow: none;
+    text-decoration: none;
+  }

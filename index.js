@@ -1,33 +1,56 @@
-var currentDate = new Date ();
+window.onload = changeStatus();
 
-var open = document.getElementById("table").rows[currentDate.getDay()+1].cells[2].innerHTML;
-var close = document.getElementById("table").rows[currentDate.getDay()+1].cells[4].innerHTML;
+function changeStatus() {
 
-var timeNow = currentDate.getHours() + ":" + currentDate.getMinutes();
+  var currentDate = new Date();
+
+  var open = document.getElementById("table").rows[currentDate.getDay() + 1].cells[2].innerHTML;
+  var close = document.getElementById("table").rows[currentDate.getDay() + 1].cells[4].innerHTML;
+
+  var timeNow = currentDate.getHours() + ":" + currentDate.getMinutes();
 
 
-if(open<=timeNow && timeNow<close){
-    document.getElementById("status").innerHTML= "Open";
-}else{
-    document.getElementById("status").innerHTML= "Close";
+  if (open <= timeNow && timeNow < close) {
+    document.getElementById("status").innerHTML = "Open";
+  } else {
+    document.getElementById("status").innerHTML = "Close";
+  }
+
+
 }
-console.log(status);
+
+
+
+function closeEarly() {
+
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  m = twoDigits(m);
+
+  document.getElementById("table").rows[today.getDay() + 1].cells[4].innerHTML = h + ":" + m;
+}
+
+function twoDigits(i) {
+  if (i < 10) {
+    i = "0" + i
+  };
+  return i;
+}
 
 function startTime() {
-    var today = new Date();
-    var h = today.getHours();
-    var m = today.getMinutes();
-    var s = today.getSeconds();
-    m = twoDigits(m);
-    s = twoDigits(s);
-    document.getElementById("clock").innerHTML =
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = twoDigits(m);
+  s = twoDigits(s);
+  document.getElementById("clock").innerHTML =
     h + ":" + m + ":" + s;
-    
-  }
 
-  setInterval(startTime, 500);
-  function twoDigits(i) {
-    if (i < 10) {i = "0" + i};  
-    return i;
-  }
-  
+}
+
+setInterval(startTime, 500);
+
+
+
