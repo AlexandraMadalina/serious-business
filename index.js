@@ -28,6 +28,9 @@ function closeEarly() {
   var m = today.getMinutes();
   m = twoDigits(m);
 
+  var close = document.getElementById("table").rows[today.getDay() + 1].cells[4];
+close.style.backgroundColor = "rgba(52, 58, 64, 0.5)"
+
   document.getElementById("table").rows[today.getDay() + 1].cells[4].innerHTML = h + ":" + m;
 }
 
@@ -51,6 +54,3 @@ function startTime() {
 }
 
 setInterval(startTime, 500);
-
-
-
