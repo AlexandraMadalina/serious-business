@@ -12,3 +12,22 @@ if(open<=timeNow && timeNow<close){
     document.getElementById("status").innerHTML= "Close";
 }
 console.log(status);
+
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = twoDigits(m);
+    s = twoDigits(s);
+    document.getElementById("clock").innerHTML =
+    h + ":" + m + ":" + s;
+    
+  }
+
+  setInterval(startTime, 500);
+  function twoDigits(i) {
+    if (i < 10) {i = "0" + i};  
+    return i;
+  }
+  
